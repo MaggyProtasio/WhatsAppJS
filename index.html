@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script> 
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" href="src/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">  
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>WhatsApp story</title>
+</head>
+<body>
+    <!-- 1 start screen-->
+    <div id="startScreen-box" class="bg bgStart">
+        <div class="phoneFrame ">
+            <div class="content ">
+                <!-- Start screen whatsapp -->
+                <div id="startScreen" class="text-center">
+                    <div id="whatsappTitle" class="animate__animated animate__fadeInUp " >WhatsApp</div>
+                    <button id="whatsappLogo" class="animate__animated animate__fadeInUp"  onclick="startChat(); getDate()">
+                        <img src="src/whatsappLogo.png">
+                    </button>
+                    <div id="metaName" class="animate__animated animate__fadeInUp" >
+                        from<br>
+                        <img src="src/metaLogoGreen.png" width="60">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <!-- 2 chat screen-->
+    <div id="chatScreen-box" class="bg bgChat">
+        <div class="phoneFrame">
+            <!-- Header (absolute) -->
+            <div class="header child header-icons" >
+                <div class="header-time"></div>
+                <div class="header-wifi">
+                    <img src="src/signal.png" width="13">
+                    <img src="src/wifi.png" width="13">
+                    <img src="src/battery.png" width="13">
+                </div>
+                <div class="header-friend pt-2 ps-4 row justify-content-start ">
+                    <div class="col-1 pt-1">
+                        <img src="src/blankpp.png" width="27">
+                    </div>
+                    <div class="col-11 ps-4">
+                       Nonna Maria ❤️
+                        <span class="status-text">online</span>
+                    </div>
+                </div>
+                <div class="header-call">
+                    <img src="src/videocallBlue.png" width="22" class="me-2">
+                    <img src="src/callBlue.png" width="20">
+                </div>
+            </div>
+            <!-- Footer -->
+            <div class="footer child"></div>
+
+            <!-- Chat content -->
+            <div class="content">
+                <div id="chatScreen">
+                    <!-- Dove viene inserito i messaggi -->
+                </div>
+                <div class="footer-content">
+                    <img src="src/plusBlue.png" width="17">
+                    <input type="text" id="inputResponse" class="input-box ">
+                    <button class="sendBtn" onclick="getSendInput(7)">
+                        <img src="src/send-message.png" width="15">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

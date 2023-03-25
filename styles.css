@@ -1,0 +1,253 @@
+
+.bg{
+    background-color: yellowgreen;
+    width: 340px;
+    height: 700px;
+    margin: auto;
+    margin-top: 1.5%;
+    border-radius: 80px;
+}
+
+.phoneFrame{
+    position: relative;
+    border: 0px solid blue;
+    width: 350px;
+    height: 700px;
+    margin: auto;
+    margin-top: -1%;
+    margin-left: -1%;
+    background: url(src/iphonex.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content{
+    position: relative;
+    border: 0px solid red;
+    width: 305px;
+    height: 700px;
+    margin: auto;
+    padding: 5% 3% 5% 3%;
+}
+
+/* Start screen
+---------------------- */
+.bgStart{
+    background-color: rgb(239, 233, 233);
+}
+
+#startScreen-box{
+    display: block;/*  NOTE */
+}
+
+#whatsappLogo{
+    border: none;
+    background: transparent;
+}
+
+#whatsappLogo img{
+    width: 150px;
+    height: auto;
+}
+
+#whatsappTitle{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: #252926;
+    margin-top: 50%;
+}
+
+#metaName{
+    margin-top: 80%;
+}
+
+/* Header
+------------------ */
+.header{
+    background-color: #f8f8f8;
+    height: 75px;
+    width: 320px;
+    border-radius: 10px;
+    top: 2%;
+    left: 5%;
+}
+
+.child{
+    position: absolute;
+    z-index: -1;
+}
+.header-icons{
+    font-weight: 500;
+}
+
+.header-time{
+    font-size: 13px;
+    margin-top: 3%;
+    margin-left: 9%;
+}
+
+.header-wifi{
+    position: absolute;
+    top: 8px;
+    right: 21px;
+}
+
+.header-call{
+    position: absolute;
+    top: 40px;
+    right: 21px;
+}
+
+.status-text{
+    position: absolute;
+    left: 62px;
+    top: 56px;
+    color:#a6a6a6;
+    font-size: 11px;
+}
+
+/* Footer
+----------------------------- */
+.footer{
+    background-color: #f8f8f8;
+    height: 70px;
+    width: 320px;
+    border-radius: 10px;
+    top: 88%;
+    left: 4%;
+}
+
+.footer-content{
+    position: absolute;
+    width: 100%;
+    bottom: 40px;
+}
+
+.input-box{
+    border: 1px solid #a6a6a6;
+    border-radius: 30px;
+    padding: 1% 4% 1% 4%;
+    width: 230px;
+}
+
+input[type="text"]:focus{
+    border-color: #007aff;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(0, 0, 0, 0.075);
+    outline: 0 none;
+}
+input[type="text"]:hover{
+    background-color: #ededed;
+}
+
+.sendBtn{
+    border: 1px solid #007aff ;
+    border-radius: 14px;
+    background-color: transparent;
+    padding: 3px 8px 3px 8px;
+    transition: 0.5s ease;
+}
+
+.sendBtn:hover{
+    background-color: #ededed;
+}
+
+
+/* chat screen
+------------------------------------- */
+#chatScreen{
+    margin-top: 25%;
+    overflow: auto;
+    height: 520px;
+    scroll-behavior: smooth;
+}
+
+#chatScreen-box{
+    display: none;/* NOTE */
+    font-family: 'Roboto', sans-serif;
+}
+
+.bgChat{
+    left: 39%;
+    background-color: none;
+    background: url(src/bgChat2.png);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    z-index: -1;
+}
+
+.msg{
+    border: 0px solid brown;
+    padding: 5px 11px 5px 11px;
+    margin: 7px 5px 7px 5px;
+    border-radius: 13px;
+    box-shadow: 2px 4px 10px #25292631;
+    display: block;
+    font-size: 15.5px;
+    clear: both;    /* to make the float not be with each other */
+    max-width: 75%;
+    line-height: 18px;
+}
+
+.leftMsg{
+    text-align: left;
+    background-color: #ffffff;
+    float: left;
+}
+
+.rightMsg{
+    text-align: left;
+    background-color: #D9FDD3;
+    float: right;
+}
+
+.istrMsg{
+    text-align:center;
+    margin: auto;
+    background-color: #d9fdd388;
+    border-radius: 0px;
+    max-width: 100%;
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+/* Animations
+--------------------- */
+.fade-in-bottom {
+	-webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-bottom 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in-bottom {
+    0% {
+      -webkit-transform: translateY(50px);
+              transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-bottom {
+    0% {
+      -webkit-transform: translateY(50px);
+              transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  
+  
